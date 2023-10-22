@@ -1,0 +1,102 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Center vertically */
+}
+
+/* Style the hero section */
+.hero {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+body {
+    background-image: url('images/background-garage.jpg');
+}
+
+/* Style the login form */
+.login-form {
+    background-color: #434343;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    width: 300px;
+}
+
+.registration-form {
+    background-color: #434343;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    width: 300px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button.round-button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.round-button:hover {
+    background-color: #ff6600;
+}
+
+/* Style the footer */
+.creative-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}

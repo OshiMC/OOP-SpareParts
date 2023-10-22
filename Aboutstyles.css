@@ -1,0 +1,446 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the hero section with background image */
+.hero {
+    background-image: url('images/background4.jpg');
+    background-size: cover; /* Cover the entire header with the background image */
+    background-position: center; /* Center the background image */
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff6600;
+}
+
+/* Style for the dark mode toggle button */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.dark-mode-toggle p{
+    padding-left: 15px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Style the navigation bar */
+.main-nav {
+    background-color: #333;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ff9900;
+}
+
+/* Style the products section */
+.products {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+    margin: 0px; /* Remove the default margin */
+}
+
+.product {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: -10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 0 1 calc(33.33% - 20px); /* 3 products per row */
+    margin: 10px; /* Add a margin to separate products */
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 50%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #009900;
+    font-size: 16px;
+}
+
+.buy-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #ff6600;
+}
+
+.creative-slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 500px; 
+}
+
+.slide {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.slide-caption h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.slide-caption p {
+    font-size: 18px;
+}
+
+/* Testimonials Section */
+.tz-testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tz-testimonials .title-wrapper {
+    margin-bottom: 40px;
+}
+
+.tz-testimonials h3.shortcode-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Adjust the color as needed */
+}
+
+.tz-testimonials .carousel-loader {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.tz-testimonials .wrapper {
+    position: relative;
+}
+
+.tz-testimonials .carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tz-testimonials .item-wrapper {
+    max-width: 350px;
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.tz-testimonials .star-rating {
+    background: url('star-rating.png') no-repeat;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.tz-testimonials .star-rating span {
+    width: 100%; /* Adjust this width based on the rating */
+    background: url('star-rating.png') no-repeat;
+}
+
+.tz-testimonials .text-wrapper p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555; /* Adjust the color as needed */
+}
+
+.tz-testimonials .about-author {
+    font-size: 14px;
+}
+
+.tz-testimonials .about-author cite {
+    font-weight: bold;
+}
+
+.tz-testimonials .about-author small {
+    font-style: italic;
+    color: #777;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin: 0 auto 20px;
+    text-align: center; 
+}
+
+/* Style the car brand container */
+.car-brands-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Style individual car brand items */
+.car-brand {
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+/* Style the car brand logos */
+.car-brand img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+/* Style the car brand names */
+.car-brand p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect for car brand items */
+.car-brand:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+
+}
+
+/* Hover effect for car brand logos */
+.car-brand:hover img {
+    transform: scale(1.2); /* Enlarge the logo on hover */
+}
+
+
+/* Style the creative footer */
+.creative-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    margin-right: auto;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: #ff9900;
+}
+
+
+/* CSS for dark mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Invert colors for specific elements to make them readable in dark mode */
+.dark-mode .hero {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .main-nav {
+    background-color: #464343;
+}
+
+.dark-mode .main-nav a {
+    color: #fff;
+}
+
+.dark-mode .product {
+    background-color: #3b3737;
+    border-radius: 10px;
+    padding: -10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    flex: 0 1 calc(33.33% - 20px); /* 3 products per row */
+    margin: 10px; /* Add a margin to separate products */
+}
+
+.dark-mode .tz-testimonials {
+    background-color: #454343;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.dark-mode .tz-testimonials h3.shortcode-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f4f4f4; /* Adjust the color as needed */
+}
+
+.dark-mode .tz-testimonials .about-author small {
+    font-style: italic;
+    color: #000000;
+}
+
+.dark-mode .tz-testimonials .about-author {
+    font-size: 14px;
+    color: #000000;
+}

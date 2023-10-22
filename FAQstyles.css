@@ -1,0 +1,74 @@
+/* Apply dark mode styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Style the hero section with background image in dark mode */
+.dark-mode .hero {
+    background-image: url('images/background4-dark.jpg'); /* Use a different background image for dark mode */
+}
+
+/* Style the navigation bar in dark mode */
+.dark-mode .main-nav {
+    background-color: #111;
+}
+
+.dark-mode .main-nav a {
+    color: #fff;
+}
+
+/* Style the products section in dark mode */
+.dark-mode .products {
+    background-color: #333;
+}
+
+.dark-mode .product {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .product h3 {
+    color: #ff9900; /* Highlight product titles in orange */
+}
+
+/* Style the creative footer in dark mode */
+.dark-mode .creative-footer {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .social-icon {
+    color: #fff;
+}
+
+/* Add any additional dark mode styles as needed */
+
+.faq-container {
+    text-align: left;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.faq-head{
+    color: #fff;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.faq-item p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+}
